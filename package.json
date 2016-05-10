@@ -1,10 +1,11 @@
 {
-  "name": "project-three-STRP",
+  "name": "project-three-backends",
   "version": "1.0.0",
   "description": "project-three-STRP express router setup",
-  "main": "server.js",
+  "main": "index.js",
   "scripts": {
-    "start": "nodemon"
+    "start-dev": "nodemon",
+    "start": "node index.js"
   },
   "author": "",
   "license": "ISC",
