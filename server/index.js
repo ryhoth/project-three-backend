@@ -15,7 +15,7 @@ app.use(bodyParser.json());
 
 
 /* go connect to db first then setup all routes */
-db.connect('mongodb://localhost:27017/mapado', (err) => {
+db.connect( process.env.MONGODB_URI || 'mongodb://localhost:27017/mapado', (err) => {
   if (err) {
     console.log('Unable to connect to Mongo.')
     process.exit(1)
